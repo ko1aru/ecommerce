@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply px-4 py-2 rounded font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-blue-600 text-white hover:bg-blue-700;
+  }
+  .btn-secondary {
+    @apply btn bg-gray-500 text-white hover:bg-gray-600;
+  }
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700;
+  }
+
+  /* Badges (for statuses, etc.) */
+  .badge {
+    @apply px-2 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-success {
+    @apply badge bg-green-200 text-green-800;
+  }
+  .badge-failed {
+    @apply badge bg-red-200 text-red-800;
+  }
+  .badge-pending {
+    @apply badge bg-yellow-200 text-yellow-800;
+  }
+
+  /* Cards (for products, wishlist items, etc.) */
+  .card {
+    @apply border rounded-lg p-4 shadow-sm hover:shadow-md transition;
+  }
+
+  /* Table header */
+  .table-header {
+    @apply bg-gray-600 text-white;
+  }
+}

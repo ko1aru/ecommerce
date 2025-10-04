@@ -55,3 +55,11 @@ VALUES
 
 select * from product where category = 'Laptops';
 update product set category = 'Laptops' where category = 'Laptop';
+
+-- Granting remote access to root user
+-- ALTER USER 'root'@'%' IDENTIFIED BY 'root';
+CREATE USER 'root'@'%' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+SELECT Host, User FROM mysql.user WHERE User='root';

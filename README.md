@@ -6,7 +6,7 @@ This project is designed as a **resume-grade personal project**, focusing on cor
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Backend
 
